@@ -1,0 +1,38 @@
+.cartItemCard {
+  display: flex;
+  padding: 1rem;
+  height: auto;
+  align-items: flex-start;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+  /* background-color: yellow; */
+}
+
+.cartItemCard > img {
+  width: 4rem;
+}
+
+.cartItemCard > div {
+  display: flex;
+  flex-direction: column;
+  margin: 0.3rem 1rem;
+}
+
+.cartItemCard > div > a {
+  font-size: 0.9rem;
+  color: rgba(24, 24, 24, 0.815);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cartItemCard > div > span {
+  font-size: 0.9rem;
+  color: white;
+  color: rgba(24, 24, 24, 0.815);
+}
+
+.cartItemCard > div > p {
+  color: red;
+  font-size: 0.9rem;
+  cursor: pointer;
+}

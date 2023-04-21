@@ -1,0 +1,141 @@
+.container {
+  /* max-width: 1200px; */
+  width: 100%;
+  height: auto;
+  margin: auto;
+  /* padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+  /* background-color: red; */
+  /* background-color: red; */
+  transition: opacity 1s ease-out;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  position: relative;
+  /* border-radius: 1rem; */
+  background-position: center;
+  /* transition-duration: 1000ms; */
+  /* background-color: red; */
+  /* background-repeat: no-repeat; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.sliderLeft {
+  position: absolute;
+  left: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  margin-left: 1rem;
+  opacity: 0.5;
+  /* background-color: black; */
+}
+
+.sliderRight {
+  position: absolute;
+  right: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 30px; */
+  margin-right: 1rem;
+  opacity: 0.5;
+  /* background-color: black; */
+}
+
+.sliderRight:hover,
+.sliderLeft:hover {
+  opacity: 1;
+}
+
+.bottomDots {
+  /* background-color: red; */
+  max-width: 6rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+}
+
+/* @media only screen and (max-width: 768px) {
+  .container {
+    height: 30%;
+    width: 100%;
+  }
+} */
+
+@media only screen and (max-width: 768px) {
+  .container {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.dot {
+  background-color: green;
+}
+
+/* @media only screen and (max-width: 320px){
+  .sliderLeft{
+    left: -2%;
+
+  }
+
+  .sliderRight{
+    right: -2%
+  }
+} */
+
+@media only screen and (max-width: 350px) {
+  .sliderLeft {
+    left: -4%;
+    font-style: 1rem;
+  }
+
+  .sliderRight {
+    right: -4%;
+    font-style: 1rem;
+  }
+
+  .bottomDots {
+    /* background-color: red; */
+    max-width: 4rem;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+  }
+
+  .dot {
+    /* background-color: green; */
+    width: 0.2rem;
+    height: 0.2rem;
+    margin: 0.2rem;
+    cursor: pointer;
+  }
+}

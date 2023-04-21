@@ -1,0 +1,237 @@
+.emptyCart {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  padding: 10rem;
+  flex-direction: column;
+}
+.emptyCart > svg {
+  color: red;
+  font-size: 4rem;
+}
+
+.emptyCart > p {
+  font-size: 2rem;
+}
+
+.emptyCart > a {
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cartPage {
+  padding: 3rem;
+  /* background-color:pink; */
+}
+
+.cartHeader {
+  background-color: dodgerblue;
+  width: 100%;
+  box-sizing: border-box;
+  margin: auto;
+  display: grid;
+  padding: 0.5rem;
+  color: white;
+  grid-template-columns: 4fr 1fr 1fr;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  /* border-radius: 20px; */
+}
+.cartHeader > p:last-child {
+  text-align: end;
+}
+
+.cartcontainer {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+}
+
+.cartInput {
+  display: flex;
+  height: auto;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.cartInput > button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.616);
+  padding: 0.5rem;
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s;
+}
+
+.cartInput > button:hover {
+  background-color: rgba(0, 0, 0, 0.767);
+}
+
+.cartInput > input {
+  border: none;
+  width: 3rem;
+  padding: 0.5rem;
+  color: rgba(0, 0, 0, 0.74);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.cartSubtotal {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: flex-end;
+  color: rgba(0, 0, 0, 0.753);
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.cartGrossProfit {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr;
+}
+
+.cartGrossProfitBox {
+  border-top: 3px solid dodgerblue;
+  box-sizing: border-box;
+  margin: 1rem 4rem;
+  display: flex;
+  font-size: 1rem;
+  padding: 2rem 0;
+  justify-content: space-between;
+}
+
+.checkOutBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.checkOutBtn > div {
+  background-color: dodgerblue;
+  padding: 0.8rem 4rem;
+  color: white;
+  font-size: 1rem;
+  border-radius: 200px;
+}
+
+@media only screen and (max-width: 590px) {
+  .cartPage {
+    padding: 0;
+  }
+  .cartHeader {
+    background-color: dodgerblue;
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+    display: grid;
+    padding: 0.5rem 0.5rem;
+    color: white;
+    grid-template-columns: 2.5fr 1fr 1fr;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .cartcontainer {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 1fr;
+  }
+
+  .cartGrossProfit {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    /* margin-left: 1rem; */
+  }
+  .cartGrossProfit > :nth-first-child() {
+    display: none;
+  }
+
+  .leftdiv {
+    display: none;
+  }
+
+  .cartGrossProfitBox {
+    border-top: 3px solid dodgerblue;
+    width: 100%;
+    box-sizing: border-box;
+    /* margin: 1rem 4rem; */
+    /* margin: auto 0; */
+    display: flex;
+
+    font-size: 1rem;
+    padding: 2rem 0;
+    /* justify-content: space-between; */
+    justify-content: space-between;
+  }
+
+  /* .checkOutBt > button { */
+  /* background-color: dodgerblue;
+    border-radius: 30px;
+    padding: 0.8rem 4rem;
+    border: none;
+    color: white;
+    width: 50%;
+    font-size: 1rem;
+    margin: 1rem 4rem; */
+  /* display: flex; */
+  /* } */
+
+  .checkOutBtn {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* justify-content: center; */
+    /* background-color: red; */
+    width: 100%;
+    margin-left: 4rem;
+  }
+
+  /* .but {
+    width: 100%;
+    height: 100%;
+    background-color: dodgerblue;
+    border-radius: 30px;
+    padding: 0.8rem 4rem;
+    border: none;
+    color: white;
+    width: 50%;
+    font-size: 1rem;
+    margin: 1rem 4rem;
+  } */
+
+  .checkOutBtn > div {
+    background-color: dodgerblue;
+    padding: 0.8rem 4rem;
+    color: white;
+    font-size: 1rem;
+    border-radius: 200px;
+  }
+
+  .cartInput > button {
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    background-color: dodgerblue;
+    padding: 0.7rem;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.5s;
+  }
+
+  .cartInput > button:hover {
+    background-color: rgba(0, 0, 0, 0.767);
+  }
+}

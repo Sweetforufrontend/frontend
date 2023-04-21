@@ -1,0 +1,88 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: gray;
+  overflow: hidden;
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+}
+
+.icons {
+  position: absolute;
+  cursor: pointer;
+}
+
+.searchBox {
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: gray;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  overflow: hidden;
+}
+
+.searchbar {
+  background-color: white;
+  border: none;
+  width: 100%;
+  height: 3rem;
+  padding: 0.9rem;
+  font: 300 1rem normal;
+  box-sizing: border-box;
+}
+
+.searchBox > div > input[type="text"] {
+  background-color: white;
+  border: none;
+  width: 70%;
+  height: 3rem;
+  padding: 0.9rem;
+  font: 300 1rem normal;
+  box-sizing: border-box;
+}
+
+.searchBox > div > input[type="submit"] {
+  height: 3rem;
+  border-radius: 0%;
+  background-color: dodgerblue;
+  border: none;
+  /* padding: 1.2rem 1rem; */
+  font: 300 1rem "Roboto";
+  cursor: pointer;
+  color: white;
+  transition: all 0.5sec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.categoryLink {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  font-size: .9rem;
+  color: white;
+  height: auto;
+  border: 1px solid white;
+  border-radius: 1rem;
+  padding: .5rem;
+  margin: .5rem;
+  cursor: pointer;
+}
